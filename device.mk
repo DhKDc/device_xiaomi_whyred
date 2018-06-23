@@ -148,6 +148,9 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     camera.device@3.2-impl
 	
+PRODUCT_PACKAGES += \
+	Snap
+	
 # Camera-face detection
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.camera
@@ -285,7 +288,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sdm660
+    lights.sdm660
+
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
 
 # Media
 PRODUCT_COPY_FILES += \
