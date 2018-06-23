@@ -26,6 +26,8 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/whyred
 
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm636
 TARGET_NO_BOOTLOADER := true

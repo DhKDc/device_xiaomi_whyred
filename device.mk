@@ -203,7 +203,8 @@ PRODUCT_COPY_FILES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    XiaomiDoze	
+    XiaomiDoze \
+	XiaomiParts
 	
 # DRM
 PRODUCT_PACKAGES += \

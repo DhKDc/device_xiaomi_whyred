@@ -37,6 +37,8 @@
 
 # Sysfs
 /sys/devices/soc/leds-qpnp-[0-9]+/leds(/.*)?				u:object_r:sysfs_leds:s0
+/sys/class/leds/led:torch_0/max_brightness          u:object_r:sysfs_torch:s0
+/sys/class/leds/led:torch_1/max_brightness          u:object_r:sysfs_torch:s0
 
 # Thermal engine
 /data/decrypt\.txt                                            u:object_r:thermal_decrypt_file:s0
