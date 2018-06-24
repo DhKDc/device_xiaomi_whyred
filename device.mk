@@ -86,22 +86,25 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.0-service \
     audio.a2dp.default \
-    audio_amplifier.sdm660 \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
+
+PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
+
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.soundtrigger@2.0-impl
+
+PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_COPY_FILES += \
@@ -140,19 +143,15 @@ PRODUCT_PACKAGES += \
 	
 # Camera
 PRODUCT_PACKAGES += \
+    Snap
+
+PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor \
     camera.device@1.0-impl \
     camera.device@3.2-impl
-	
-PRODUCT_PACKAGES += \
-	Snap
-	
-# Camera-face detection
-PRODUCT_PACKAGES += \
-    com.qualcomm.qti.camera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -181,9 +180,9 @@ PRODUCT_PACKAGES += \
 	libdisplayservice \
 	libdisplayservicehidl \
     liboverlay \
-    libtinyxml \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+	libtinyxml
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
